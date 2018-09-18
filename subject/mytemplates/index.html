@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href={{static_url("bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css")}} rel="stylesheet">
+    <script src={{static_url("bootstrap/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css")}}></script>
+    <script src={{static_url("js/jquery-3.3.1.min.js")}}></script>
+    <script src={{static_url("bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js")}}></script>
+    <!--<link href="../mystatics/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">-->
+    <!--<script src="../mystatics/bootstrap/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"></script>-->
+    <!--<script src="../mystatics/js/jquery-3.3.1.min.js"></script>-->
+    <!--<script src="../mystatics/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+    <style>
+        .website {
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #198baf;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 5px #999;
+            width: 90%;
+            height: 25px;
+        }
+        .website:hover {background-color: #165c8e
+        }
+        .website:active {
+            background-color: #165c8e;
+            box-shadow: 0 2px #666;
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+<!--<img src={{static_url("image/无际图标.jpg")}}" class="img-responsive" alt="响应式图像" style="height: 40px;">-->
+    <div class="text-center container">
+        <h1>无际搜闻</h1>
+    </div>
+    <div class="clearfix">
+        <div class="pull-left container" data-spy="srcoll" data-target="#newsName" data-offset="0" style="height: 600px;overflow:auto; position: relative;width: 15%;">
+            <div style="padding-top: 10px;" class="text-center">
+                <nav id="newsName" class="navbar navbar-default navbar-static" role="navigation">
+                    <ul class="list-unstyled">
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.babifinance.www">BABI财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="pro.bcsky">链天下</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.bibaodao.www">币报道</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="org.bikuai.www">币块财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.bishequ">币社区</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.bitrating">比特评级</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.8btc.www">巴比特资讯</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.btc123.www">btc123</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.btc798.www">比特币之家</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div >
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.budkr.www">布道财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.chainfor.www">链向财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.coingogo.www">币源社区</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="cn.coinvoice.www">coinvoice</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.daoqm.www">链易财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.epcnn.www">E能链财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.fengniaocaijing.www">蜂鸟财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.fn.www">FN资讯</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.gongxiangcj.www">共享财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.haitunbc.www">海豚区块链</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.hangliancj.www">杭链财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.hashcaijing.www">哈希财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.hecaijing.www">核财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.51huolian.www">火链财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.huoxing24.www">火星财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.ihuoqiu.www">火球财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.jinse.www">金色财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.kg.www">千氪财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.leilook.www">雷鹿财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="cn.7234.www">链世界</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.longkuai.www">龙块</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.qianba.www">博链财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div >
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="cn.queding.www">确定财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="net.shangxia.www">上下财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.shilian">世链财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="cn.tuoluocaijing.www">陀螺财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.tuoniaox.www">鸵鸟区块链</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.weilaicaijing.www">未来财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.youjiatuanjian">布洛克财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="net.zaoping.www">早评财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.zhilianfm.www">智链财经</button>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    <button class="website" onclick="newsTitle(this)" value="com.zijie.www">字节财经</button>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="pull-left container" data-spy="srcoll" data-target="#news" data-offset="0" style="height: 600px;overflow:auto; position: relative;width: 60%;">
+            <div id="title">
+                <div style="margin: 0 20px;">
+                    <div>
+                        <h3>
+                            网站名字
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function exchange(name){
+                    var elem = $("#title");
+                    elem.empty();
+                    var titleNmae = '<div style="margin: 0 20px;"> <div> <h3>' + name + '</h3> </div> </div>';
+                    elem.append(titleNmae);
+                }
+            </script>
+            <nav id="news" class="navbar navbar-default navbar-static" role="navigation">
+                <div  id="newsContent">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseOne">
+                                        点击我进行展开，再次点击我进行折叠。第 1 部分
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div>
+                                        <span>timeout</span>
+                                        <span>author</span>
+                                    </div>
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseTwo">
+                                        点击我进行展开，再次点击我进行折叠。第 2 部分
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseThree">
+                                        点击我进行展开，再次点击我进行折叠。第 3 部分
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseFour">
+                                        点击我进行展开，再次点击我进行折叠。第 3 部分
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseFive">
+                                        点击我进行展开，再次点击我进行折叠。第 3 部分
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseSix">
+                                        点击我进行展开，再次点击我进行折叠。第 3 部分
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseSeven">
+                                        点击我进行展开，再次点击我进行折叠。第 3 部分
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseEight">
+                                        点击我进行展开，再次点击我进行折叠。第 3 部分
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseEight" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseNine">
+                                        点击我进行展开，再次点击我进行折叠。第 3 部分
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseNine" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                    vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <script>
+                function information(news) {
+                    var branch = $("#accordion");
+                    branch.append(news);
+                    $("img").attr("class", "img-responsive")
+                }
+                function content_present(values) {
+                    var elem = $("#newsContent");
+                    elem.empty();
+                    elem.append('<div class="panel-group" id="accordion"></div>');
+                    $.ajax({
+                        url: "/check",
+                        data: {"source_url": values, "type": "news"},
+                        type: "post",
+                        dataType: "html",
+                        async: true,
+                        success: function (message) {
+                            information(message);
+                        },
+                        error: function (XMLHttpRequest, textStatus) {
+                            console.log(XMLHttpRequest.status, XMLHttpRequest.readyState, textStatus);
+                            alert('页面数据获取失败');
+                        }
+                    })
+                }
+            </script>
+            <div class="text-center" id="turn-the-page">
+                <ul class="pagination">
+                    <li><button class="btn btn-info" onclick="pages(this)" value="com.confeas.www 1 12" id="home-page">首页</button></li>
+                    <li><button class="btn btn-info" onclick="pages(this)" value="" id="top-page">上一页</button></li>
+                    <!--<li><button  value="">...</button></li>-->
+                    <li><button class="btn btn-info" onclick="pages(this)" value="">1</button></li>
+                    <li><button class="btn btn-info" onclick="pages(this)" value="">2</button></li>
+                    <li><button class="btn btn-info" onclick="pages(this)" value="">3</button></li>
+                    <li><button class="btn btn-info"  value="">...</button></li>
+                    <li><button class="btn btn-info" onclick="pages(this)" value="" id="bottom-page">下一页</button></li>
+                    <li><button class="btn btn-info" onclick="pages(this)" value="">尾页</button></li>
+                </ul>
+            </div>
+            <script>
+                function number_page(message) {
+                    var elem = $("#turn-the-page");
+                    elem.empty();
+                    elem.append(message);
+                    $("img").attr("class", "img-responsive")
+                }
+                function pages(elem) {
+                    var textNumber = elem.innerText;
+                    var values = $("#home-page").attr("value");
+                    $.ajax({
+                        url: "/page",
+                        data: {"source_url": values, "type": "news", "initial":textNumber},
+                        type: "post",
+                        dataType: "html",
+                        async: true,
+                        success: function (message) {
+                            number_page(message);
+                        },
+                        error: function (XMLHttpRequest, textStatus) {
+                            console.log(XMLHttpRequest.status, XMLHttpRequest.readyState, textStatus);
+                            alert('页面数据获取失败');
+                        }
+                    });
+                    var text = elem.innerText;
+                    inheritance(text, values);
+                }
+                function inheritance(text, values) {
+                    var strs = values.split(" ");
+                    var number = Number(strs[1]);
+                    if (text === "上一页" && number !== 1){
+                        number -= 1;
+                    }else if (text === "下一页" && number !== Number(strs[2])){
+                        number += 1;
+                    }else if (text === "尾页"){
+                        number = Number(strs[2]);
+                    }else if (text === "首页"){
+                        number = 1;
+                    }else if (text === "上一页" && strs[1] === "1"){
+                        number = strs[1];
+                    }else if (text === "下一页" && strs[1] === strs[2]){
+                        number = Number(strs[2]);
+                    }else{
+                        number = text;
+                    }
+                    var msg = strs[0] + " " + number + " " + strs[2];
+                    content_present(msg);
+                }
+            </script>
+        </div>
+        <div class="pull-right container" data-spy="srcoll" data-target="#newsAlerts" data-offset="0" style="height: 600px;overflow:auto; position: relative;width: 25%;">
+            <div>
+                <div style="margin-left: 30%;">
+                    <h3>
+                        快讯
+                    </h3>
+                </div>
+            </div>
+            <nav id="newsAlerts" class="navbar navbar-default navbar-static" role="navigation">
+                <div id="messageAlerts">
+                    <ul class="list-unstyled" id="ul-alerts">
+                        <li class="clearfix">
+                            <div class="pull-left" style="width: 20%;">
+                                <p style="margin-top: 10px;" class="text-center">
+                                    00:00
+                                </p>
+                            </div>
+                            <div class="pull-left" style="width: 80%;">
+                                <h4>
+                                    title
+                                </h4>
+                                <p>
+                                    内容信息
+                                </p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left" style="width: 20%;">
+                                <p style="margin-top: 10px;" class="text-center">
+                                    00:00
+                                </p>
+                            </div>
+                            <div class="pull-left" style="width: 80%;">
+                                <h4>
+                                    title
+                                </h4>
+                                <p>
+                                    内容信息
+                                </p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left" style="width: 20%;">
+                                <p style="margin-top: 10px;" class="text-center">
+                                    00:00
+                                </p>
+                            </div>
+                            <div class="pull-left" style="width: 80%;">
+                                <h4>
+                                    title
+                                </h4>
+                                <p>
+                                    内容信息
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <script>
+                function dataAlerts(alerts) {
+                    var elem = $("#messageAlerts");
+                    elem.empty();
+                    elem.append('<ul class="list-unstyled" id="ul-alerts"></ul>');
+                    var branch = $("#ul-alerts");
+                    branch.append(alerts);
+                }
+            </script>
+        </div>
+    </div>
+    <div class="container" >
+        <div style="margin-top: 10px;" class="text-center">
+            <p>
+                声明:转载文章，只为提供最新数据分析和信息共享，并不意味着赞同其观点或证实其描述。文章内容仅供参考，不构成投资建议。投资者据此操作，风险自担。
+            </p>
+        </div>
+    </div>
+    <script>
+        function newsTitle (elem) {
+            var newsName = elem.innerText;
+            exchange(newsName);
+            var values = elem.value;
+            content_present(values);
+            $.ajax({
+                url: "/check",
+                data: {"source_url": values, "type": "alerts"},
+                type: "post",
+                dataType: "html",
+                async: true,
+                success: function (message) {
+                    dataAlerts(message);
+                },
+                error: function (XMLHttpRequest, textStatus) {
+                    console.log(XMLHttpRequest.status, XMLHttpRequest.readyState, textStatus);
+                    alert('页面数据获取失败');
+                }
+            });
+            $.ajax({
+                url: "/page",
+                data: {"source_url": values, "type": "news", "initial": "first"},
+                type: "post",
+                dataType: "html",
+                async: true,
+                success: function (message) {
+                    number_page(message);
+                },
+                error: function (XMLHttpRequest, textStatus) {
+                    console.log(XMLHttpRequest.status, XMLHttpRequest.readyState, textStatus);
+                    alert('页面数据获取失败');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
